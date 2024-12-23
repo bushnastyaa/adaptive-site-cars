@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58f404ce76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>7 Cars | Where all cars live</title>
+</head>
+<body>
+    <div class="main-navigation">
+        <input type="checkbox" class="main-navigation__checkbox" id="main-navigation__checkbox">
+        <label class="main-navigation__icon-box" for="main-navigation__checkbox">
+            <span class="main-navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="nav__bg"></div>
+        <nav class="nav">
+            <ul class="nav__list u-text-center">
+                <li class="nav__list--item"><a href="#home" class="nav__list--link">Home</a></li>
+                <li class="nav__list--item"><a href="#slide" class="nav__list--link">New BMW</a></li>
+                <li class="nav__list--item"><a href="#cards" class="nav__list--link">All models</a></li>
+                <li class="nav__list--item"><a href="#racing" class="nav__list--link">Sports cars</a></li>
+                <li class="nav__list--item"><a href="#services" class="nav__list--link">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <header class="header" id="home">
+        <div class="bg-video">
+            <video class="bg-video__video" src="images/video/car_driving2.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header__logo-box">
+            <a href="index.html">
+                <img class="logo-image" src="images/logo/logo-white-2x.png" alt="7cars logo">
+            </a>
+        </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">Luxury cars for every lover</h1>
+            <div class="header__audio-box">
+                <button class="btn btn--green" onclick="document.getElementById('audio').play()">Listen</button>
+                <audio id="audio" src="images/video/audio.mp3" preload="auto">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__slide" id="slide">
+        <div class="slides">
+            <input type="radio" class="radio" name="car" id="r1" checked="">
+            <input type="radio" class="radio" name="car" id="r2">
+            <input type="radio" class="radio" name="car" id="r3">
+
+            <div class="slides__slide s1">
+                <img src="images/slider/1.jpg" alt="The BMW 4 Series Coupe">
+                <div class="slides__slide--text">
+                    <p>The BMW 4 Series Coupe</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-marker-alt"></i>&nbsp; Texas</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2022</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 5 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 3.2s</span>
+                </p>
+            </div>
+
+            <div class="slides__slide s2">
+                <img src="images/slider/2.jpg" alt="The BMW 8 Series Gran Coupe">
+                <div class="slides__slide--text">
+                    <p>The BMW 8 Series Gran Coupe</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; Chicago</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2022</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 5 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 2.8s</span>
+                </p>
+            </div>
+
+            <div class="slides__slide s3">
+                <img src="images/slider/3.jpg" alt="The BMW 8 Series Gran Coupe">
+                <div class="slides__slide--text">
+                    <p>The BMW 8 Series Gran Coupe</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; Chicago</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2022</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 5 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 2.8s</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+        </div>
+    </section>
+
+    <section class="section_in-demand" id="cards">
+        <div class="u-text-center">
+            <h2 class="heading-secondary">
+                In hign demand - Deal now
+            </h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/GT86.jpg" alt="Toyta GT86">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">GT86</p>
+                                <p class="car-slogan">Powerful motor like a tiger<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Illinois</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2021</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;White</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/foto-velar-2022_00.jpg" alt="Velar">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">Velar</p>
+                                <p class="car-slogan">Classic and elegant SUV<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Rio de Janeiro</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2023</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Gray</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/GLE.jpg" alt="GLE">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">GLE</p>
+                                <p class="car-slogan">The most comfortable SUV<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Cape Town</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2023</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Black</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/F8 Tributo.jpg" alt="F8 Tributo">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">F8 Tributo</p>
+                                <p class="car-slogan">Road best<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;London</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2022</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;2 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Red</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-4">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/M3 F80.jpg" alt="M3 F80">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">M3 F80</p>
+                                <p class="car-slogan">New era<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Cape-Town</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2023</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Black</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-5">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/tacoma.jpg" alt="Tacoma">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">Tacoma</p>
+                                <p class="car-slogan">World's strongest pickup<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;São Paulo</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2022</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Gray</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-6">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/Model 3.jpg" alt="Model 3">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">Model 3</p>
+                                <p class="car-slogan">Autopilot and electric<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Washington</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2023</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;White</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-7">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/M5 F90.jpg" alt="M5 F90">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">M5 F90</p>
+                                <p class="car-slogan">Never been a turtle<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Maputo</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2022</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;5 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;White</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-8">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+
+                    <div class="card__side card__side--front">
+                        <div class="card__side--front-image-box">
+                            <img class="card__side--front-image" src="images/cards/Panamera.jpg" alt="Panamera">
+                        </div>
+                        <div class="card__side--front-description">
+                            <div class="card__side--front-title">
+                                <p class="car-model">Panamera</p>
+                                <p class="car-slogan">Fast car for the roads<i class="fa-solid fa-circle-info fa-beat-fade"></i></p>
+                            </div>
+                            <div class="card__side--front-specs">
+                                <div class="spec-col">
+                                    <span><i class="fas fa-map-marker-alt"></i>&nbsp;Dundee</span>
+                                    <span><i class="fas fa-calendar-week"></i>&nbsp;2022</span>
+                                </div>
+                                <div class="spec-col">
+                                    <span><i class="fas fa-user"></i>&nbsp;2 People</span>
+                                    <span><i class="fas fa-tint"></i>&nbsp;Black</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__side card__side--back card__side--back-9">
+                        <div class="back-main">
+                            <p class="back-main__text">Starting from</p>
+                            <p class="back-main__price">$26, 985</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section__racing-nature" id="racing">
+        <div class="u-text-center">
+            <h2 class="heading-secondary">
+                Racing by nature
+            </h2>
+        </div>
+
+        <div class="slides">
+            <input type="radio" class="radio" name="car" id="racing-nature-1" checked>
+            <input type="radio" class="radio" name="car" id="racing-nature-2">
+            <input type="radio" class="radio" name="car" id="racing-nature-3">
+            <input type="radio" class="radio" name="car" id="racing-nature-4">
+
+            <div class="slides__slide s1">
+                <img src="images/racingNature/huracan.jpg" alt="Lamborgini Huracan">
+                <div class="slides__slide--text">
+                    <p>Lamborgini Huracán</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; Lisbon</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2023</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 2 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 2.9s</span>
+                </p>
+            </div>
+
+            <div class="slides__slide s2">
+                <img src="images/racingNature/aventador.jpg" alt="Aventador LP 780-4 ULTIMATE">
+                <div class="slides__slide--text">
+                    <p>Aventador LP 780-4</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; New-York</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2022</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 2 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 2.8s</span>
+                </p>
+            </div>
+
+            <div class="slides__slide s3">
+                <img src="images/racingNature/urus.jpg" alt="Lamborgini Urus">
+                <div class="slides__slide--text">
+                    <p>Lamborgini Urus</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; Maputo</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2023</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 5 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 3.6s</span>
+                </p>
+            </div>
+
+            <div class="slides__slide s4">
+                <img src="images/racingNature/2019-Lamborghini-Huracan-Evo-Spyder.jpg" alt="Lamborgini Huracán evo Spyder">
+                <div class="slides__slide--text">
+                    <p>Huracán evo Spyder</p>
+                </div>
+                <p class="slides__slide--text-icons">
+                    <span><i class="fas fa-map-market-alt"></i>&nbsp; London</span>
+                    <span><i class="fas fa-calendar-week"></i>&nbsp; 2024</span>
+                    <span><i class="fas fa-user"></i>&nbsp; 2 People</span>
+                    <span><i class="fas fa-tachometer-fast"></i>&nbsp; 0 - 100 km in 3.3s</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="racing-nature-1" class="bar"></label>
+            <label for="racing-nature-2" class="bar"></label>
+            <label for="racing-nature-3" class="bar"></label>
+            <label for="racing-nature-4" class="bar"></label>
+        </div>
+    </section>
+
+    <section class="section__services" id="services">
+        <div class="u-text-center">
+            <h2 class="heading-secondary">
+                Our services
+            </h2>
+        </div>
+
+        <div class="section__services--content services-box">
+            <div class="services_row">
+
+                <div class="service-box">
+                    <i class="service-box--icon fal fa-car"></i>
+                    <p class="service-box--title">Car Sell</p>
+                    <p class="service-box--description">
+                        Sell your new or used car. We help you to evaluate the your car price if needed. If your car is broken, we might fix and sell.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <i class="service-box--icon fal fa-tools"></i>
+                    <p class="service-box--title">Customization</p>
+                    <p class="service-box--description">
+                        Customize to make it feel as desired. Add unique specs like turbo engine, sound, paint, damping and more to your car.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <i class="service-box--icon fal fa-exchange"></i>
+                    <p class="service-box--title">Exchange</p>
+                    <p class="service-box--description">
+                        Find a vehicle owned by a customer or 7 cars for this purpose, negotiate and make the exchange. Vehicle changes here are quick and flexible.
+                    </p>
+                </div>   
+
+                <div class="service-box">
+                    <i class="service-box--icon fal fa-road"></i>
+                    <p class="service-box--title">24/7 Assistance</p>
+                    <p class="service-box--description">
+                        If you want help with your vehicle repair or any other purpose, we are available to help you at all times. Get in touch with us.
+                    </p>
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__menu">
+            <div class="footer__menu--body">
+                <div class="footer_row">
+                    <ul class="footer__list">
+                        <p class="footer__list--title">Call center</p>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Book a test drive</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Schedule service</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Subscribe to newsletter</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Quote request</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <p class="footer__list--title">Shopping</p>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Find a dealer</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Services</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">7 cars top choices</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Our app store</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <p class="footer__list--title">Legal terms</p>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Privacy policy</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Cookies policy</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Conditions and terms</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Complain E-book</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Alternative litigation</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <p class="footer__list--title">Discover more</p>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Showroom</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Press</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Career</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">7 cars e-wallet</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Fleet sales</a></li>
+                        <li class="footer__list--item"><a href="#" class="footer__list--link">Reporting policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__socials">
+                <div class="u-text-center">
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
